@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Index</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/Styles.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="Scripts/Script.js"></script>
+</head>
+
+<body>	
+	<div data-role="page">
+		<div data-role="header">
+			<h1>  Fill up the details to start the quiz </h1>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<form id="detailsForm" action="Quiz.php" method="POST">
+				<label for="firstName">First Name:</label>
+				<span id="firstNameError">*</span>
+	  			<input type="text" name="firstName" id="firstName" placeholder="First Name" data-clear-btn="true">
+	  			<br />
+	  		
+	  			<label for="lastName">Last Name:</label>
+	  			<span id="lastNameError">*</span>
+	  			<input type="text" id="lastName" placeholder="Last Name" data-clear-btn="true">
+	  			<br />
+	  		
+	  			<label for="email">E-mail :</label>
+	  			<span id="emailError">*</span>
+	  			<input type="text" id="email" placeholder="Email" data-clear-btn="true">
+	  			<br />
+	  		
+	  			<label for="phoneNumber">Phone Number :</label>
+	  			<span id="phoneNumberError">*</span>
+	  			<input type="text" id="phoneNumber" placeholder="Phone number" data-clear-btn="true">
+	  			<br />
+	  		
+	  			<label for="address">Address :</label>
+	  			<span id="addressError">*</span>
+	  			<input type="text" id="address" placeholder="Address" data-clear-btn="true">
+	  			<br />
+	  			<input type="button" id="startQuiz" value="Start Quiz">
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
